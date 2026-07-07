@@ -895,7 +895,7 @@ EnterGame = function(version) {
 	};
 	setTimeout(()=> {
 		//window.location.href = "../" + version + "/";
-		window.open("../" + version + "/");
+		window.open("../" + version + "/", "_self");
 	}, 200);
 },
 BackPage = function() {
@@ -1034,7 +1034,7 @@ StartGameMod = function(version) {
 	let ModString = '?mods=' + selectedMods.toString();
 	setTimeout(()=> {
 		//window.location.href = "../" + version + "/" + ModString;
-		window.open("../" + version + "/" + ModString)
+		window.open("../" + version + "/" + ModString, "_self")
 	}, 200);
 },
 generateModPages = function() {
@@ -1234,7 +1234,7 @@ newPage = function(id) {
 playDefinitiveEdition = function() {
 	PlayClick();
 	setTimeout(()=> {
-		window.open("https://oldprodigy.onrender.com/play/");
+		window.open("https://oldprodigy.onrender.com/play/", "_self");
 	}, 200);
 },
 resizeFromWindow = function(element) {
